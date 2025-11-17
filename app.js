@@ -456,4 +456,3 @@ document.getElementById('start-over').addEventListener('click', () => {
     
     showStep('step-gender');
 });
-
