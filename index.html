@@ -26,9 +26,36 @@
             <!-- Step 2: UK Size Input -->
             <div id="step-size" class="step">
                 <h2>What's your usual UK shoe size?</h2>
-                <p class="hint">Include half sizes (e.g., 7.5)</p>
+                <p class="hint">Select your usual UK size (half sizes included)</p>
                 <div class="size-input-container">
-                    <input type="number" id="uk-size" step="0.5" min="3" max="15" placeholder="e.g., 7.5">
+                    <select id="uk-size">
+                        <option value="">Select size</option>
+                        <option value="3">UK 3</option>
+                        <option value="3.5">UK 3.5</option>
+                        <option value="4">UK 4</option>
+                        <option value="4.5">UK 4.5</option>
+                        <option value="5">UK 5</option>
+                        <option value="5.5">UK 5.5</option>
+                        <option value="6">UK 6</option>
+                        <option value="6.5">UK 6.5</option>
+                        <option value="7">UK 7</option>
+                        <option value="7.5">UK 7.5</option>
+                        <option value="8">UK 8</option>
+                        <option value="8.5">UK 8.5</option>
+                        <option value="9">UK 9</option>
+                        <option value="9.5">UK 9.5</option>
+                        <option value="10">UK 10</option>
+                        <option value="10.5">UK 10.5</option>
+                        <option value="11">UK 11</option>
+                        <option value="11.5">UK 11.5</option>
+                        <option value="12">UK 12</option>
+                        <option value="12.5">UK 12.5</option>
+                        <option value="13">UK 13</option>
+                        <option value="13.5">UK 13.5</option>
+                        <option value="14">UK 14</option>
+                        <option value="14.5">UK 14.5</option>
+                        <option value="15">UK 15</option>
+                    </select>
                     <button id="size-continue" class="btn-primary">Continue</button>
                 </div>
             </div>
@@ -61,7 +88,7 @@
             <!-- Step 4: Comfort Map -->
             <div id="step-comfort" class="step">
                 <h2>Where do your shoes usually feel tight or loose?</h2>
-                <p class="hint">Tap each zone and select your experience</p>
+                <p class="hint">Tap any area that usually feels tight or loose (optional)</p>
                 <div class="comfort-map-container">
                     <svg id="foot-map" viewBox="0 0 200 400" class="foot-map">
                         <!-- Foot outline -->
@@ -71,7 +98,6 @@
                         <!-- Zones -->
                         <circle id="zone-toes" cx="100" cy="100" r="35" class="zone" data-zone="toes" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
                         <ellipse id="zone-sides" cx="100" cy="180" rx="50" ry="40" class="zone" data-zone="sides" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
-                        <ellipse id="zone-midfoot" cx="100" cy="250" rx="45" ry="35" class="zone" data-zone="midfoot" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
                         <ellipse id="zone-heel" cx="100" cy="340" rx="40" ry="35" class="zone" data-zone="heel" fill="rgba(0,0,0,0)" stroke="rgba(0,0,0,0.3)" stroke-width="2"/>
                     </svg>
                 </div>
@@ -90,7 +116,7 @@
                     <button id="zone-done" class="btn-secondary">Done</button>
                 </div>
                 <div id="comfort-summary" class="comfort-summary"></div>
-                <button id="comfort-continue" class="btn-primary" style="display: none;">Get Recommendation</button>
+                <button id="comfort-continue" class="btn-primary">Show my recommended size</button>
             </div>
 
             <!-- Step 5: Results -->
